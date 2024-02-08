@@ -11,6 +11,7 @@
         grid-template-rows: 100px 1fr;
         color: #fff;
     }
+
     &::before {
         --opacidad-negro: 0.6;
         content: "";
@@ -23,15 +24,153 @@
         background-size: cover;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 95%, 0 80%);
         z-index: -1;
-        .containerb{
+
+        .containerb {
             --pading-containerb: 100px 0;
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             overflow: hidden;
             padding: var(--padding-container);
-            color:white;
-        
+            color: white;
+
+        }
+
+        .navb {
+            --padding-containerb: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .navb_title {
+            font-weight: 300;
+        }
+
+        .nav_items_bass {
+            margin-left: auto;
+            padding: 0;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: max-content;
+            gap: 2em;
+        }
+
+        .nav_link_bass {
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+        }
+
+    }
+
+    // Primer articulo de bass
+    .about {
+        text-align: center;
+
+        .subtitle {
+            color: #FC6736;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .about_paragraph {
+            line-height: 1.7;
+            color: black;
+
+        }
+
+        .about_main {
+            padding-top: 80px;
+            display: grid;
+            width: 90%;
+            margin: o auto;
+            gap: 1em;
+            overflow: hidden;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+
+            .about_icons {
+                display: grid;
+                gap: 1em;
+                justify-items: center;
+                width: 260px;
+                overflow: hidden;
+                margin: 0 auto;
+
+                .about_icon {
+                    width: 40px;
+                }
+
+                .about_title {
+                    color: #FE7A36;
+                }
+            }
         }
     }
+
+    // Segundo artículo bass
+    .bass-article {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr 2fr;
+        grid-template-rows: 100px 200px 100px 300px 100px 300px;
+        grid-template-areas:
+            "svg1    title1   img1"
+            "txt     txt     img1"
+            "svg2    title2   img2"
+            "frame1  frame1  img2"
+            "svg3    title3   img2"
+            "frame2  frame2  img2";
+        gap: 0.5rem;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        .img-article1 {
+            grid-area: svg1;
+        }
+
+        .bh1 {
+            grid-area: title1;
+            color: #FC6736;
+            font-size: 2rem;
+        }
+
+        .p-article {
+            grid-area: txt;
+            color: black;
+            font-size: 1rem;
+        }
+
+        .img-b1 {
+            grid-area: img1;
+        }
+
+        .img-article2 {
+            grid-area: svg2;
+        }
+        .bh2 {
+            grid-area: title2;
+            color: #FC6736;
+            font-size: 2rem;
+        }
+        .img-b2 {
+            grid-area: img2;
+        }
+        .iframe-b1 {
+            grid-area: frame1;
+        }
+    
+        .img-article3 {
+            grid-area: svg3;
+        }
+    
+        .bh3 {
+            grid-area: title3;
+            color: #FC6736;
+            font-size: 2rem;
+        }
+    
+        .iframe-b2 {
+            grid-area: frame2;
+        }
+    }    
 }
