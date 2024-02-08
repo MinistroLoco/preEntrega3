@@ -157,11 +157,82 @@
     color: #FE7A36;
 }
 
+/* Segundo articulo bass */
+/* article bajo */
+.bass-article{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 2fr;
+    grid-template-rows: 100px 200px 100px 300px 100px 300px ;
+    grid-template-areas: 
+    "svg1    title1   img1"
+    "txt     txt     img1"
+    "svg2    title2   img2"
+    "frame1  frame1  img2"
+    "svg3    title3   img2"
+    "frame2  frame2  img2";
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.img-article1{
+    grid-area: svg1;
+}
+
+.bh1{
+    grid-area: title1;
+    color: #FC6736;
+    font-size: 2rem;
+}
+
+.img-b1{
+    grid-area: img1;
+    
+}
+
+.p-article{
+    grid-area: txt;
+    color: black;
+    font-size: 1rem;
+}
+
+.img-article2{
+    grid-area: svg2;
+}
+
+.bh2{
+    grid-area: title2;
+    color: #FC6736;
+    font-size: 2rem;
+}
+
+.img-b2{
+    grid-area: img2;
+}
+
+.iframe-b1{
+   grid-area: frame1; 
+}
+
+.img-article3{
+    grid-area: svg3;
+}
+
+.bh3{
+    grid-area: title3;
+    color: #FC6736;
+    font-size: 2rem;
+}
+
+.iframe-b2{
+   grid-area: frame2; 
+}
+
 
 /*-------------footer ---------------*/
 /* footer */
 .pie{
-    background-color: #436850;
+    background-color: #86A7FC;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3,50px);
