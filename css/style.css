@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
+:root{
+    --color-header: white;
+}
 .home{
+    font-family: 'Open Sans', sans-serif;
     --opacidad-negro: 0.7;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../images/musician.jpg');
 }
@@ -36,11 +40,74 @@
     text-decoration: none;
 }
 
-/* Bajo */
+/* -----------------Bajo ----------------*/
 
 
+.homeb{
+    font-family: 'Open Sans', sans-serif; 
+}
 
+.herob::before{
+    --opacidad-negro: 0.6;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url(../images/bass-background.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 95%, 0 80%);
+    z-index: -1;
+}
 
+.herob{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color:#fff
+}
 
+.containerb{
+    --pading-containerb: 100px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    color:white;
+
+}
+
+/* Nav */
+.navb{
+    --padding-containerb:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navb_title{
+    font-weight: 300;
+}
+
+.nav_items_bass{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    gap: 2em;
+}
+
+.nav_link_bass{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
 
 
