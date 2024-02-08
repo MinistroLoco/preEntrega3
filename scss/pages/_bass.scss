@@ -1,3 +1,8 @@
+:root{
+    --color-headerbass: #fff;
+    --color-titlebass: #FC6736;
+    --color--paragraph: black;
+}
 .homeb {
     font-family: var(--font-family);
 
@@ -9,7 +14,7 @@
         position: relative;
         display: grid;
         grid-template-rows: 100px 1fr;
-        color: #fff;
+        color: var(--color-headerbass);
     }
 
     &::before {
@@ -32,7 +37,7 @@
             margin: 0 auto;
             overflow: hidden;
             padding: var(--padding-container);
-            color: white;
+            color: var(--color-headerbass);
 
         }
 
@@ -59,7 +64,7 @@
         .nav_link_bass {
             text-decoration: none;
             list-style: none;
-            color: #fff;
+            color: var(--color-headerbass);
         }
 
     }
@@ -69,14 +74,14 @@
         text-align: center;
 
         .subtitle {
-            color: #FC6736;
+            color: var(--color-titlebass);
             font-size: 2rem;
             margin-bottom: 25px;
         }
 
         .about_paragraph {
             line-height: 1.7;
-            color: black;
+            color: var(--color--paragraph);
 
         }
 
@@ -102,7 +107,7 @@
                 }
 
                 .about_title {
-                    color: #FE7A36;
+                    color: var(--color-title);
                 }
             }
         }
@@ -130,13 +135,13 @@
 
         .bh1 {
             grid-area: title1;
-            color: #FC6736;
+            color: var(--color-titlebass);
             font-size: 2rem;
         }
 
         .p-article {
             grid-area: txt;
-            color: black;
+            color: var(--color--paragraph);
             font-size: 1rem;
         }
 
@@ -149,7 +154,7 @@
         }
         .bh2 {
             grid-area: title2;
-            color: #FC6736;
+            color: var(--color-titlebass);
             font-size: 2rem;
         }
         .img-b2 {
@@ -165,7 +170,7 @@
     
         .bh3 {
             grid-area: title3;
-            color: #FC6736;
+            color: var(--color-titlebass);
             font-size: 2rem;
         }
     
