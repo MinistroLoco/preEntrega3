@@ -566,14 +566,14 @@ h2{
     grid-area: p;
 }
 
-icon-pie1{
+.icon-pie1{
     grid-area: img1;
 }
 
-icon-pie2{
+.icon-pie2{
     grid-area: img2;
 }
 
-icon-pie3{
+.icon-pie3{
     grid-area: img3;
 }
