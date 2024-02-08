@@ -358,6 +358,19 @@
     grid-area: frame2;
 }
 
+/* segundo articulo de guitarra acustica */
+.card-group{
+    margin-bottom: 10px;
+}
+.card-img-top{
+    height: 40px;
+    width: 40px;
+}
+
+.card-body{
+    color: #76453B;
+}
+
 /*-------------footer ---------------*/
 /* footer */
 .pie{
