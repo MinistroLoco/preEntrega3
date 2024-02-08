@@ -373,6 +373,7 @@
 /* -------------------Guitarra Eléctrica -------*/
 .homege{
     font-family: 'Open Sans', sans-serif; 
+    background-color: #B4B4B8;
 }
 
 .heroge::before{
@@ -453,6 +454,50 @@
     background-color:#092635;
     margin-bottom: 2rem;
     
+}
+
+/* About guitarra eléctrica */
+.aboutgE{
+    text-align: center;
+}
+
+.subtitlegE{
+    color: #0B60B0;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about_paragraph{
+    line-height: 1.7;
+    color: black;
+    
+}
+
+.about_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: o auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+
+.about_icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.about_icon{
+    width: 40px;  
+}
+
+.about_title{
+    color: #0B60B0;
 }
 
 
