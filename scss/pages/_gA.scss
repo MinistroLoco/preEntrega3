@@ -1,8 +1,11 @@
-:root {}
+:root {
+    --color--titleHeader: #fff;
+}
 
 .homega {
     font-family: 'Open Sans', sans-serif;
 
+    // Encabezado
     .heroga {
         width: 100%;
         height: 100vh;
@@ -11,39 +14,44 @@
         position: relative;
         display: grid;
         grid-template-rows: 100px 1fr;
-        color: #fff;
-        .containerga{
+        color: var(--color--titleHeader);
+
+        .containerga {
             --pading-containerb: 100px 0;
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             overflow: hidden;
             padding: var(--padding-container);
-            color:white;
-            .navga{
-                --padding-containerb:0;
+            color: var(--color--titleHeader);
+
+            .navga {
+                --padding-containerb: 0;
                 height: 100%;
                 display: flex;
                 align-items: center;
-                .navga_title{
+
+                .navga_title {
                     font-weight: 300;
                 }
-            } 
-            .nav_items_ga{
+            }
+
+            .nav_items_ga {
                 margin-left: auto;
                 padding: 0;
                 display: grid;
                 grid-auto-flow: column;
                 grid-template-columns: max-content;
                 gap: 2em;
-                .nav_link_ga{
+
+                .nav_link_ga {
                     text-decoration: none;
                     list-style: none;
-                    color: #fff;
+                    color: var(--color--titleHeader);
                 }
             }
         }
-        
+
     }
 
     &::before {
@@ -59,45 +67,64 @@
         clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 95%, 0 80%);
         z-index: -1;
     }
-    .hga{
+
+    // Primer artículo
+    .hga {
         text-align: center;
         font-size: 2rem;
     }
-    .guitarA{
+
+    .guitarA {
         display: grid;
         grid-template-columns: 4fr 1.5fr;
         grid-template-rows: 300px repeat(2, 200px) 300px;
-        grid-template-areas: 
-        "frame1 img1"
-        "pg1    img1"
-        "img2   pg2"
-        "img2   frame2";
+        grid-template-areas:
+            "frame1 img1"
+            "pg1    img1"
+            "img2   pg2"
+            "img2   frame2";
         gap: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         align-items: end;
-        .frameG1{
+
+        .frameG1 {
             grid-area: frame1;
         }
-        .img-guitar1{
+
+        .img-guitar1 {
             grid-area: img1;
         }
-        .img-guitar2{
+
+        .img-guitar2 {
             grid-area: img2;
         }
-        .guitarP1{
+
+        .guitarP1 {
             grid-area: pg1;
         }
-        .guitarP2{
+
+        .guitarP2 {
             grid-area: pg2;
         }
-        .frameG2{
+
+        .frameG2 {
             grid-area: frame2;
         }
-        
-    }
-    
 
-    
+    }
+
+    // Segundo artículo
+    .card-group {
+        margin-bottom: 10px;
+        .card-img-top {
+            height: 40px;
+            width: 40px;
+        }
+        .card-body {
+            color: #76453B;
+        }
+
+    }
     
 }
