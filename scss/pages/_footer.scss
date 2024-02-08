@@ -1,0 +1,38 @@
+:root{
+    --background-pie: #86A7FC;
+}
+
+.pie{
+    background-color: var(--background-pie);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,50px);
+    grid-template-areas: 
+    "tit  tit  tit"
+    "p    p    p"
+    "img1 img2 img3";
+    align-items: center;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    h2{
+        grid-area: tit;
+    }
+    
+    .p-footer{
+        grid-area: p;
+    }
+    
+    .icon-pie1{
+        grid-area: img1;
+    }
+    
+    .icon-pie2{
+        grid-area: img2;
+    }
+    
+    .icon-pie3{
+        grid-area: img3;
+    }
+}
